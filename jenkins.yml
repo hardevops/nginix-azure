@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: jenkins/jenkins
+  name: jenkins
 spec:
   replicas: 1
   selector:
@@ -13,7 +13,7 @@ spec:
         app: jenkins/jenkins
     spec:
       containers:
-      - name: jenkins/jenkins
+      - name: jenkins
         image: jenkins/jenkins
 ---
 apiVersion: v1
